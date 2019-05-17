@@ -22,7 +22,8 @@
 
 
 5.对比表格
+函数1的实验数据对比表
 ![第一个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC1.png)
-
+函数2的实验数据对比表
 ![第二个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC2.png)
 
