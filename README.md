@@ -12,20 +12,20 @@
 
 3.实验结果对比：
 ![第一个函数的两种方法拟合效果对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/0.5_g(0%2C1)_%E5%AF%B9%E6%AF%94.png)
-
 ![第二个函数的两种方法拟合效果对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/1%2Bsin(3x)_0.2_g(0%2C3)%E5%AF%B9%E6%AF%94.png)
 
 4.可视化不同噪声率和不同噪声水平下的拟合优度和均方误差
 ![第一个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/x%5E4%2Bx%5E3%2Bx%5E2%2Bx__%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9B%B8%E5%85%B3%E6%80%A7%E5%92%8C%E8%AF%AF%E5%B7%AE.png)
-
 ![第二个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/1%2Bsin(3x)__%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9B%B8%E5%85%B3%E6%80%A7%E5%92%8C%E8%AF%AF%E5%B7%AE.png)
 
 
 5.对比表格
 
-函数1的实验数据对比表
+                                                      函数1的实验数据对比表
+                                                      
 ![第一个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC1.png)
 
-函数2的实验数据对比表
+                                                      函数2的实验数据对比表
+                                                      
 ![第二个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC2.png)
 
