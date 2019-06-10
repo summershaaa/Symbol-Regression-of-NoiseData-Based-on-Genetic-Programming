@@ -13,7 +13,7 @@
  * 右上图是改进GP的第二次拟合结果，选择离第一次拟合结果最近的前N个数据进行训练，发现拟合效果好了不少。
  * 中下图是改进GP的第三次拟合结果，选择离第二次拟合结果最近的前N个数据进行训练，发现拟合结果已经非常解决目标。
  * 右下图是改进GP的第四次拟合结果，选择离第三次拟合结果最近的前N个数据进行训练，发现拟合结果和目标函数一致。
- <br>
+ 
 ![分解改进过程](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%88%86%E8%A7%A3%E8%BF%87%E7%A8%8B.png)
 
 #### 2.测试函数：
