@@ -14,7 +14,7 @@
  * 中下图是改进GP的第三次拟合结果，选择离第二次拟合结果最近的前N个数据进行训练，发现拟合结果已经非常接近目标函数。
  * 右下图是改进GP的第四次拟合结果，选择离第三次拟合结果最近的前N个数据进行训练，发现拟合结果和目标函数一致。
  
-![分解改进过程](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%88%86%E8%A7%A3%E8%BF%87%E7%A8%8B.png)
+![分解改进过程](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%94%B9%E8%BF%9B%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
 
 #### 2.测试函数：
 
