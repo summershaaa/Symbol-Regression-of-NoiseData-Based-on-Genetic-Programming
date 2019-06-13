@@ -17,7 +17,7 @@
 
 > (1) **终止符集**(terminals): 终止符集是问题中最基本的元素,包括变量和常量. 
 >
-> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如<img src="https://latex.codecogs.com/gif.latex?$&plus;,&space;-&space;,&space;×&space;,&space;÷,sin,cos,log,exp$" title="$+, - , × , ÷,sin,cos,log,exp$" /> 等.
+> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如<img src="https://latex.codecogs.com/gif.latex?$&plus;,&space;-&space;,&space;×&space;,&space;÷,sin,cos,log,exp$" title="$+, - , × , /,sin,cos,log,exp$" /> 等.
 >
 > (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />或<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />
 
@@ -77,7 +77,7 @@
 
 (3) 根据拟合结果来重新选择训练数据，使得拟合结果不断逼近目标。
 
-- 左上图是训练数据集($\epsilon$=0.5，<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />=25%.)及目标函数.
+- 左上图是训练数据集(<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />=0.5，<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />=25%.)及目标函数.
 - 左下图是传统GP拟合的结果，因为使用所有数据训练，所以拟合结果会受到噪声数据的影响。
 - 中上图是改进GP的第一次拟合结果，因为初始训练数据是随机选择的，所以效果一般都不理想。
 - 右上图是改进GP的第二次拟合结果，选择离第一次拟合结果最近的前n个数据进行训练，发现拟合效果好了不少。
@@ -93,18 +93,18 @@
 
 ### 6.实验结果
 
-##### 6.1  第一个测试函数的$R^2和MSE$结果
+##### 6.1  第一个测试函数的<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />和<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />结果
 
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/n2.png"></div>
 
-##### 6.2  第二个测试函数的$R^2和MSE$结果
+##### 6.2  第二个测试函数的<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />和<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />结果
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/s1.png"></div>
 
-##### 6.3  第三个测试函数的$R^2和MSE$结果
+##### 6.3  第三个测试函数的<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />和<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />结果
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/k7.png"></div>
