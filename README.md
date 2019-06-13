@@ -88,7 +88,7 @@
 
 ##### 5.2 算法参数
 
-![算法参数](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E5%8F%82%E6%95%B0.png)
+<div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E5%8F%82%E6%95%B0.png"></div>
 
 
 ### 6.实验结果
@@ -97,17 +97,17 @@
 
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
-![结果1](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/n2.png)
+<div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/n2.png"></div>
 
 ##### 6.2  第二个测试函数的$R^2和MSE$结果
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
-![结果2](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/s1.png)
+<div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/s1.png"></div>
 
 ##### 6.3  第三个测试函数的$R^2和MSE$结果
 <div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png"></div>
 
-![结果3](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/k7.png)
+<div align='center'><img src="https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/k7.png"></div>
 
 ### 7.结论
 
