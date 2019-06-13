@@ -73,7 +73,7 @@
 - 训练所用数据集收敛，即重新采样的数据和上一轮训练数据完全一致
 - 达到最大迭代次数。
 
-<div align='ecnter'>![流程图](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png)</div>
+<div align='ecnter'>![流程图](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 (3) 根据拟合结果来重新选择训练数据，使得拟合结果不断逼近目标。
 
