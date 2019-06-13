@@ -17,9 +17,9 @@
 
 > (1) **终止符集**(terminals): 终止符集是问题中最基本的元素,包括变量和常量. 
 >
-> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如+, - , × , ÷,sin,cos,log,exp 等.
+> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如<img src="https://latex.codecogs.com/gif.latex?$&plus;,&space;-&space;,&space;×&space;,&space;÷,sin,cos,log,exp$" title="$+, - , × , ÷,sin,cos,log,exp$" /> 等.
 >
-> (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />或<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$MAE$" />
+> (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />或<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />
 
 ##### 2.2 遗传规划的主要算子
 
@@ -46,26 +46,26 @@
 
 ##### 3.2 噪声率(NoiseRatio)和噪声水平(NoiseLevel)
 
-在实验中，我们考虑对部分($\epsilon$)数据添加高斯噪声g(0, $\sigma$ ),其中g是均值为0，标准差为 $\sigma$ 的高斯随机数。
-噪声率$\epsilon$ 考虑范围为[0.1,0.2,0.3,0.4,0.5]；噪声水平$\sigma$则取区间目标值范围约25%和50%的标准差水平。
-即在不同噪声率$\epsilon$和噪声水平g(0,𝜎)取值下对每组数据做10次测试。
+在实验中，我们考虑对部分(<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />)数据添加高斯噪声g(0, <img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" /> ),其中g是均值为0，标准差为 <img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" /> 的高斯随机数。
+噪声率<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" /> 考虑范围为[0.1,0.2,0.3,0.4,0.5]；噪声水平<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />则取区间目标值范围约25%和50%的标准差水平。
+即在不同噪声率<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />和噪声水平g(0,<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />)取值下对每组数据做10次测试。
 
 如下图：
 - 左子图是原始无噪声的数据
-- 中子图是在$\epsilon$=0.2，$\sigma$=25%取值下添加噪声后的数据
-- 右子图是在$\epsilon$=0.5，$\sigma$=50%取值下添加噪声后的数据
+- 中子图是在<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />=0.2，<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />=25%取值下添加噪声后的数据
+- 右子图是在<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />=0.5，<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />=50%取值下添加噪声后的数据
 ![](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%99%AA%E5%A3%B0%E6%95%B0%E6%8D%AE%E6%BC%94%E7%A4%BA.png)
 
 ### 4.实验数据
 ![](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%85%AC%E5%BC%8F.png)
-> $x \in U[a,b,c]$表示从a到b中取c个均匀随机样本，$x \in E[a,b,c]$表示从a到b内等间隔取值，间隔大小为c。
+> <img src="https://latex.codecogs.com/gif.latex?$x&space;\in&space;U[a,b,c]$" title="$x \in U[a,b,c]$" />表示从a到b中取c个均匀随机样本，<img src="https://latex.codecogs.com/gif.latex?$x&space;\in&space;E[a,b,c]$" title="$x \in E[a,b,c]$" />表示从a到b内等间隔取值，间隔大小为c。
 训练集与测试集满足独立同分布。
 
 ### 5.算法改进
 
 ##### 5.1 算法流程图：
 
-(1) 训练数据量n的选择：为了尽量减少噪声数据的影响及使训练样本尽可能多，n的大小设置为(1- $\epsilon$)N,其中$\epsilon$为噪   声率，N为样本数据个数。
+(1) 训练数据量n的选择：为了尽量减少噪声数据的影响及使训练样本尽可能多，n的大小设置为(1- <img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />)N,其中<img src="https://latex.codecogs.com/gif.latex?$\epsilon$" title="$\epsilon$" />为噪声率，N为样本数据个数。
 
 (2) 终止标准：
 
@@ -77,7 +77,7 @@
 
 (3) 根据拟合结果来重新选择训练数据，使得拟合结果不断逼近目标。
 
-- 左上图是训练数据集($\epsilon$=0.5，$\sigma$=25%.)及目标函数.
+- 左上图是训练数据集($\epsilon$=0.5，<img src="https://latex.codecogs.com/gif.latex?$\sigma$" title="$\sigma$" />=25%.)及目标函数.
 - 左下图是传统GP拟合的结果，因为使用所有数据训练，所以拟合结果会受到噪声数据的影响。
 - 中上图是改进GP的第一次拟合结果，因为初始训练数据是随机选择的，所以效果一般都不理想。
 - 右上图是改进GP的第二次拟合结果，选择离第一次拟合结果最近的前n个数据进行训练，发现拟合效果好了不少。
