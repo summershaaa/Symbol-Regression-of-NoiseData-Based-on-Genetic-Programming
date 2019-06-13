@@ -56,23 +56,58 @@
 - 右子图是在$\epsilon$=0.5，$\sigma$=50%取值下添加噪声后的数据
 ![](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%99%AA%E5%A3%B0%E6%95%B0%E6%8D%AE%E6%BC%94%E7%A4%BA.png)
 
+### 4.实验数据
+![](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%85%AC%E5%BC%8F.png)
+> $x \in U[a,b,c]$表示从a到b中取c个均匀随机样本，$x \in E[a,b,c]$表示从a到b内等间隔取值，间隔大小为c。
+训练集与测试集满足独立同分布。
 
-#### 3.实验结果对比：
-![第一个函数的两种方法拟合效果对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
-![第二个函数的两种方法拟合效果对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E5%AF%B9%E6%AF%94%E5%9B%BE2.png)
+### 5.算法改进
 
-#### 4.可视化不同噪声率和不同噪声水平下的拟合优度和均方误差
-![第一个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/x%5E4%2Bx%5E3%2Bx%5E2%2Bx__%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9B%B8%E5%85%B3%E6%80%A7%E5%92%8C%E8%AF%AF%E5%B7%AE.png)
-![第二个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/1%2Bsin(3x)__%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9B%B8%E5%85%B3%E6%80%A7%E5%92%8C%E8%AF%AF%E5%B7%AE.png)
+##### 5.1 算法流程图：
+
+(1) 训练数据量n的选择：为了尽量减少噪声数据的影响及使训练样本尽可能多，n的大小设置为(1- $\epsilon$)N,其中$\epsilon$为噪   声率，N为样本数据个数。
+
+(2) 终止标准：
+
+- 最佳个体适应值 fittness < 0.01
+- 训练所用数据集收敛，即重新采样的数据和上一轮训练数据完全一致
+- 达到最大迭代次数。
+![流程图](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+(3) 根据拟合结果来重新选择训练数据，使得拟合结果不断逼近目标。
+
+- 左上图是训练数据集($\epsilon$=0.5，$\sigma$=25%.)及目标函数.
+- 左下图是传统GP拟合的结果，因为使用所有数据训练，所以拟合结果会受到噪声数据的影响。
+- 中上图是改进GP的第一次拟合结果，因为初始训练数据是随机选择的，所以效果一般都不理想。
+- 右上图是改进GP的第二次拟合结果，选择离第一次拟合结果最近的前n个数据进行训练，发现拟合效果好了不少。
+- 中下图是改进GP的第三次拟合结果，选择离第二次拟合结果最近的前n个数据进行训练，发现拟合结果已经非常接近目标函数。
+- 右下图是改进GP的第四次拟合结果，选择离第三次拟合结果最近的前n个数据进行训练，发现拟合结果和目标函数一致。
+![重采样过程](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E9%87%8D%E9%87%87%E6%A0%B7%E8%BF%87%E7%A8%8B.png)
+##### 5.2 算法参数
+![算法参数](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AE%97%E6%B3%95%E5%8F%82%E6%95%B0.png)
 
 
-#### 5.对比表格
+### 6.实验结果
 
-                                          函数1的实验数据对比表
-                                                      
-![第一个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC1.png)
+##### 6.1  第一个测试函数的$R^2和MSE$结果
+![第一个测试函数](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png)
+![结果1](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/n2.png)
+##### 6.2  第二个测试函数的$R^2和MSE$结果
+![第二个测试函数](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png)
 
-                                          函数2的实验数据对比表
-                                                      
-![第二个函数的两种方法拟合对比](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC2.png)
+![结果2](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/s1.png)
+##### 6.3  第三个测试函数的$R^2和MSE$结果
+![第三个测试函数](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/%E7%AC%AC%E4%B8%89%E4%B8%AA%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C.png)
+![结果3](https://github.com/summershaaa/Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data/blob/master/Image/k7.png)
+
+### 7.结论
+
+(1) 在样本数据量比较少或分布稀疏时，传统GP算法的抗噪性较差，而改进的RSGP算法在大多数情况下仍能拟合出目标函数，对噪声数据具有高的健壮性。
+(2) 在样本数据量大或分布密集时，传统GP算法受噪声数据的影响较小，这也体现出符号回归在拟合数据中的强大。
+
+
+
+
+
+
+
 
