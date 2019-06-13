@@ -19,7 +19,7 @@
 >
 > (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如+, - , × , ÷,sin,cos,log,exp 等.
 >
-> (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如$R^2$或$MAE$
+> (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如<img src="https://latex.codecogs.com/gif.latex?$\R^2$" title="$\R^2$" />或<img src="https://latex.codecogs.com/gif.latex?$\R^2$" title="$\MAE$" />
 
 ##### 2.2 遗传规划的主要算子
 
