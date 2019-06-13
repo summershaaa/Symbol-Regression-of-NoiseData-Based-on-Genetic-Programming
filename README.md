@@ -1,4 +1,4 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # Genetic-Programming-to-Solve-Symbol-Regression-with-Noisy-Data
 ## 使用遗传规划解决带噪声数据的符号回归问题
 
@@ -115,7 +115,6 @@
 (1) 在样本数据量比较少或分布稀疏时，传统GP算法的抗噪性较差，而改进的RSGP算法在大多数情况下仍能拟合出目标函数，对噪声数据具有高的健壮性。<br>
 (2) 在样本数据量大或分布密集时，传统GP算法受噪声数据的影响较小，这也体现出符号回归在拟合数据中的强大。
 
-</script>
 
 
 
