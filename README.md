@@ -17,7 +17,7 @@
 
 > (1) **终止符集**(terminals): 终止符集是问题中最基本的元素,包括变量和常量. 
 >
-> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如<img src="https://latex.codecogs.com/gif.latex?$&plus;,&space;-&space;,&space;×&space;,&space;÷,sin,cos,log,exp$" title="$+, - , × , /,sin,cos,log,exp$" /> 等.
+> (2) **函数符集**(functions): 函数符集可以是算术运算、函数运算、逻辑运算或程序运算等,  如+, - , × , /,sin,cos,log,exp等.
 >
 > (3) **适应度值**(fitness): 适应度值函数给出了所研究环境下群体中每个个体好坏程度的评价方法。如<img src="https://latex.codecogs.com/gif.latex?$R^2$" title="$R^2$" />或<img src="https://latex.codecogs.com/gif.latex?$MAE$" title="$MAE$" />
 
